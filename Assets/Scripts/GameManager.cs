@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,9 +11,8 @@ public class GameManager : MonoBehaviour
     public Destruction part3;
     public int maxPieces;
     public int pieces;
-    public Text hpR;
+    public TMP_Text hpR;
     public int hpRemaining = 1000;
-    public int maxHP;
     // Start is called before the first frame update
     void Start()
     {

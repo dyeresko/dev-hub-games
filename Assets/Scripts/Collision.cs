@@ -5,12 +5,6 @@ using UnityEngine.UI;
 
 public class Collision : MonoBehaviour
 {
-    public Jooystick joystick;
-    public WindButton windButton;
-    public FIreButton fireButton;
-    public IceButton iceButton;
-    public DoneButton doneButton;
-    public ShootButton shootButton;
     private Collider[] hitColliders;
     private FlyingController flyingController;
     private int pieces;
@@ -69,7 +63,6 @@ public class Collision : MonoBehaviour
         shoot.windButton.gameObject.SetActive(true);
         shoot.fireButton.gameObject.SetActive(true);
         shoot.iceButton.gameObject.SetActive(true);
-        shoot.doneButton.gameObject.SetActive(true);
         shoot.joystick.gameObject.SetActive(true);
         shoot.shootButton.gameObject.SetActive(true);
 
@@ -103,12 +96,5 @@ public class Collision : MonoBehaviour
             }
         }
     }
-    // Start is called before the first frame update
 
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

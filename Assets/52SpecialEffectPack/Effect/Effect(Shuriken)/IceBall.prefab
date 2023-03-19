@@ -285,7 +285,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 6
+      scalar: 3
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4915,6 +4915,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 354db4ca76d3ec044906086ea15be173, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  joystick: {fileID: 0}
+  windButton: {fileID: 0}
+  fireButton: {fileID: 0}
+  iceButton: {fileID: 0}
+  shootButton: {fileID: 0}
   blastRadius: 0.7
   explosionPower: 100
   explosionLayers:
@@ -4922,6 +4927,7 @@ MonoBehaviour:
     m_Bits: 8
   armsPosition: {x: 0, y: 0, z: 0}
   hp: 1000
+  healthBar: {fileID: 0}
 --- !u!114 &-7152451899687842422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5227,7 +5233,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 6
+      scalar: 3
       minScalar: 1
       maxCurve:
         serializedVersion: 2

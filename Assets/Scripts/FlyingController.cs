@@ -11,11 +11,8 @@ public class FlyingController : MonoBehaviour
         MouseX = 1,
         MouseY = 2
     }
-    public RotationAxes axes = RotationAxes.MouseXAndY;
     public float speed = 5;
-    public float sensitivityHor = 9.0f;
     public float velocityOffset = 1.0f;
-    public float sensitivityVert = 9.0f;
 
     public float minimumVert = -90.0f;
     public float maximumVert = 90.0f;

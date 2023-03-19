@@ -10,21 +10,18 @@ public class Shoot : MonoBehaviour
     private Vector3 cameraPositionToMove;
     public Camera mainCamera;
 
-    public Jooystick joystick;
+    public JoystickScript joystick;
     public WindButton windButton;
-    public FIreButton fireButton;
+    public FireButton fireButton;
     public IceButton iceButton;
-    public DoneButton doneButton;
     public ShootButton shootButton;
     private Arms arms;
     public GameObject projectile;
     public Transform point;
-    public float speed;
     private Animator animator;
     public bool isAvailable = true;
     public float CooldownDuration = 1.0f;
     public Vector3 armsPosition;
-    private Offset offset;
 
 
     void Start()
@@ -36,10 +33,6 @@ public class Shoot : MonoBehaviour
         mouseLookY = mainCamera.GetComponent<MouseLook>();
 
     }
-
-    // Update is called once per frame
-
-
     public void ShootP()
     {
         if (isAvailable)
@@ -76,13 +69,13 @@ public class Shoot : MonoBehaviour
         windButton.gameObject.SetActive(false);
         fireButton.gameObject.SetActive(false);
         iceButton.gameObject.SetActive(false);
-        doneButton.gameObject.SetActive(false);
         joystick.gameObject.SetActive(false);
         shootButton.gameObject.SetActive(false);
 
 
         StartCoroutine(StartCooldown());
     }
+
 
     public IEnumerator StartCooldown()
     {

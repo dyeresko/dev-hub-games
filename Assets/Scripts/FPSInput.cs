@@ -37,16 +37,7 @@ public class FPSInput : MonoBehaviour
         charController.Move(movement);
     }
 
-    void OnEnable()
-    {
-        Messenger<float>.AddListener(GameEvent.SPEED_CHANGED, OnSpeedChanged);
-    }
 
-
-    void OnDisable()
-    {
-        Messenger<float>.RemoveListener(GameEvent.SPEED_CHANGED, OnSpeedChanged);
-    }
     void OnSpeedChanged(float value)
     {
         speed = baseSpeed * value;
